@@ -8,7 +8,7 @@
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
 - The goal is to provide an more detailed approximation about the global acces in the STM for people with mobility limitation, including people using Wheelchair and pares with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transit to complete of the full schedule. 
 - Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". Howver based on the `schedule for buses with ramp at the front` is possible to guess that not all of the have the complete ideal equipment.
-- Here more details about the methodology used.
+- At the [button of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), more details about the methodology used.
 
 ---
 
@@ -77,7 +77,8 @@
 * Map the most accesible friendly routes in Montreal
 * Cross the accesibility data with cultural routes or any other activities, in order to offer the best options to users with reduced mobility.
 
-
+---
+---
 
 <img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accesibility.png" width="80" height="80"> 
 
