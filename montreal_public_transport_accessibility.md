@@ -5,7 +5,7 @@
 
 ## Context
 
-- The current project analyses the availability of accessibility in the STM system. 
+- The current project analyze the availability of accessibility in the STM system. 
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
 - The goal is to provide an more detailed approximation about the global acces in the STM for people with mobility limitation, including people using Wheelchair and pares with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transit to complete of the full schedule. 
 - Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". Howver based on the `schedule for buses with ramp at the front` is possible to guess that not all of the have the complete ideal equipment.
@@ -20,14 +20,14 @@
 [STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
-## Bus Stops Accessibility based on Wheelchair Boarding
+### Bus Stops Accessibility based on Wheelchair Boarding
 
 - 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. This is 
 - PLACEHOLDER TO ADD SOMETHING ABOUT WHERE ARE THE MOST STOPS WITHOUT ACCESS
 
 ![](chart/BusWCHAccess.png)
 
-## Bus Trips Accessibility Based on Wheelchair Boarding
+### Bus Trips Accessibility Based on Wheelchair Boarding
 
 - Since it was not possible to find the number of Bus units, it was used the variable `Wheelchair Accessible` related to the trips.
 - The same bus can do more than one trip, but it won't change during the trip.
@@ -36,7 +36,7 @@
 
 ![](chart/TripsWCHAccess.png)
 
-## Total Bus Accesibility Oportunities (Stop + Unit)
+### Total Bus Accesibility Oportunities (Stop + Unit)
 
 - Accessible stops are not enough, the person with rediced mobility requires a Accesible unite and have boarding accesibility in the starting and ending stop.
 - Based on the data it was proposed an Bus Accessibility Opportunity index:
@@ -51,7 +51,7 @@
 
 ![](chart/BusComWCHAccess.png)
 
-## Metro Stations Accessibility Based on Wheelchair Boarding
+### Metro Stations Accessibility Based on Wheelchair Boarding
 
 - However, there is significantly room for improvement in the Metro stations. 
 - Only 14 (20 %) of the 68 Montréal Metro stations have a at least one entrance with Wheelchairs Boarding Accessibility. 
@@ -71,7 +71,6 @@
 - Some Metro stations are accessible in most of the half of the access.
 - Based on the STM website, improve accesiibility in the syste is a priority, and the data could help to find the best and more impactufull oportunities for the impacted users.
 
-----
 
 ## Next Steps
 * Cross the data with traffic and trips usage capacity, to validate the best times for people with reduced mobility to use the public transit
