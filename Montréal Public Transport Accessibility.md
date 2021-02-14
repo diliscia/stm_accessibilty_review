@@ -4,11 +4,15 @@
 
 The current project analyses the availability of accessibility in the STM system. 
 The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
-For this the data tables were taken directly form the [STM.com website](http://www.stm.info/en/about/developers). 
-The analysis was done using SQL and Python.
+The goal is to provide an more detailed approximation about the global acces in the STM for people with mobility limitation, including people using Wheelchair and pares with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transit to complete of the full schedule. 
+
+---
 
 #### Caveat
-* The actual number of STM bus units is not known. The availabe  information consists of the existing Metro stations, bus stops and trips.
+* It was not possible to find the actual number of STM bus units. However using the trips information it was possible to create a proxy value.
+* Is not clear in the data how is computed the total of services offered.
+
+---
 
 ## Bus Stops Accessibility based on Wheelchair Boarding
 
@@ -16,7 +20,18 @@ The analysis was done using SQL and Python.
 According to the STM site all the STM buses are properly equipped to securely carry wheelchairs and bikes.
 This accessibility is also relevant for parents with small kids in strollers.
 
-![BusWCHAccess](/charts/BusWCHAccess.png)
+![](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/BusWCHAccess.png)
+
+## Bus Trips Accessibility Based on Wheelchair Boarding
+
+From the data 65% of the bus trips are indicated as Wheelchair Accessible, this is curious knowing that the STM website mentions that "All vehicles are wheelchair accessible, with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line." (https://www.stm.info/en/access/using-public-transit-wheelchair).
+This could come from differences in the definitions of what the STM means in the website information as a wheelchair accesible vehicle and the definition from the data reference that says "Vehicle being used on this particular trip can accommodate at least one rider in a wheelchair.".
+
+![](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/TripsWCHAccess.png)
+
+## Total Bus Accesibility Oortunities (Stop + Unit)
+
+![](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/BusComWCHAccess.png)
 
 ## Metro Stations Accessibility Based on Wheelchair Boarding
 
@@ -25,18 +40,9 @@ In order to analyze this, it was proposed an accessibility index to compute the 
 If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a Very Accessible Station. If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a Little Accessible Station.
 Is interesting to notice that 9 stations have more than half of the entrances with Wheelchair Boarding Accessibility.
 
-![MetWCHAccess](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/BusWCHAccess.png)
+![](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/MetWCHAccess.png)
 
-## Bus Trips Accessibility Based on Wheelchair Boarding
-
-From the data 65% of the bus trips are indicated as Wheelchair Accessible, this is curious knowing that the STM website mentions that "All vehicles are wheelchair accessible, with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line." (https://www.stm.info/en/access/using-public-transit-wheelchair).
-This could come from differences in the definitions of what the STM means in the website information as a wheelchair accesible vehicle and the definition from the data reference that says "Vehicle being used on this particular trip can accommodate at least one rider in a wheelchair.".
-
-![TripsWCHAccess](/charts/TripsWCHAccess.png)
-
-## Total Bus Accesibility Oortunities (Stop + Unit)
-
-![TripsWCHAccess](/charts/TripsWCHAccess.png)
+---
 
 ## Next Steps
 * Considering that the exact number of units is unknown (is known that is over 1800) a   
