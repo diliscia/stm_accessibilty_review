@@ -1,4 +1,4 @@
-![](image/accesibility.png =250x) 
+![](image/accesibility.png){:height="36px" width="36px"}
 # STM Accessibilty Review 
 
 ## Data exploration and tools
