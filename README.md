@@ -1,4 +1,5 @@
-![](image/accesibility.png)
+<img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accesibility.png" width="80" height="80"> 
+
 # STM Accessibilty Review 
 
 ## Data exploration and tools
