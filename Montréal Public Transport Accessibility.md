@@ -10,14 +10,16 @@
 ---
 
 #### Caveat
-* In the data is not available the actual number of STM bus units. However using the trips information it was possible to create a proxy value called `bus trips`.
-* Is not clear in the data how is computed the total of services offered.
-
+-  In the data is not available the actual number of STM bus units. However using the trips information it was possible to create a proxy value called `bus trips`.
+- Is not clear in the data how is computed the total of services offered.
+- *boarding accesible* is related to the Bus stop infrastructure, "wheelchair boardings are possible from the location".*
+- *wheelchair accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
+* [data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
 ## Bus Stops Accessibility based on Wheelchair Boarding
 
-- 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. This is related to the Bus stop infrastructure.
+- 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. This is 
 - PLACEHOLDER TO ADD SOMETHING ABOUT WHERE ARE THE MOST STOPS WITHOUT ACCESS
 
 ![](chart/BusWCHAccess.png)
@@ -26,9 +28,8 @@
 
 - Since it was not possible to find the number of Bus units, it was used the variable `Wheelchair Accessible` related to the trips.
 - The same bus can do more than one trip, but it won't change during the trip.
-- Based on the results, 65% of the bus trips are indicated as Wheelchair Accessible.
-- It's possible that the variable `wheelchair accesible` in the trip data conatin some nuance. According to the [data dictionary](https://developers.google.com/transit/gtfs/reference) the variable means "Vehicle being used on this particular trip can accommodate at least one rider in a wheelchair." 
-- The 35% gap could be related to the availability to the `ramp at the front`.
+- Based on the results, 65% of the bus trips are indicated as Wheelchair Accessible. That differs from the `all vehicules accesible`
+- It's possible that the variable `wheelchair accesible` in the trip data is defined with a different approach and the 35% gap could be related to the availability to the `ramp at the front`.
 
 ![](chart/TripsWCHAccess.png)
 
@@ -38,9 +39,9 @@
 - Based on the data it was proposed an Bus Accessibility Opportunity index:
 
     - When the stop is `boarding accesible` and the vehicule is `wheelchair accessible` the trip is defined as `fully accesible`.
-    - When the stop is boarding accesibile but the vehicule is not `wheelchair accessible` the trip is defined as `bad vehicle`.
-    - When the stop is not boarding accesibile but the vehicule is `wheelchair accessible` the trip is defined as `bad stop`.
-    - When the stop is not boarding accesibile and the vehicule is not `wheelchair accessible` the trip is defined as `fully_innacesible`.
+    - When the stop is `boarding accesibile` but the vehicule is not `wheelchair accessible` the trip is defined as `bad vehicle`.
+    - When the stop is not `boarding accesibile` but the vehicule is `wheelchair accessible` the trip is defined as `bad stop`.
+    - When the stop is not `boarding accesibile` and the vehicule is not `wheelchair accessible` the trip is defined as `fully_innacesible`.
     
 - The data shows that just 2.5% of trips and fully inacessible and 63.7% are fully inacessible.
 - The 31.2% of trips not accessible due to the vehicule, could cause some valid frustration to the users, however there are good propbabilities to have a approtiated vehicule in the text trip.
