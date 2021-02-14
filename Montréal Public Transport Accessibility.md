@@ -14,7 +14,7 @@
 - Is not clear in the data how is computed the total of services offered.
 - *boarding accesible* is related to the Bus stop infrastructure, "wheelchair boardings are possible from the location".*
 - *wheelchair accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
-* [data dictionary](https://developers.google.com/transit/gtfs/reference)
+[STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
 ## Bus Stops Accessibility based on Wheelchair Boarding
