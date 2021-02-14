@@ -1,4 +1,4 @@
-![](/accesibility.png) 
+![](image/accesibility.png) 
 # STM Accessibilty Review 
 
 ## Data exploration and tools
