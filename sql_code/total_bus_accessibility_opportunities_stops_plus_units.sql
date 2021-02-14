@@ -5,7 +5,7 @@ with wheelchair_accessible_info_per_trip AS
           trip_id,
           wheelchair_accessible
    FROM 
-          trips --grain one row per trip
+          trips 
  ),
 routes_enriched_wheelchair_accessible AS
  (
@@ -69,17 +69,6 @@ compute_total_stops_and_trips_per_route AS
    GROUP BY 
          route_id
  ),
-compute_total_access_user_opportunities AS
- (
-    
-   SELECT 
-         total_stops,
-         total_trips,
-         total_stops * total_trips AS total_access_user_opportunities,
-         route_id
-   FROM 
-         compute_total_stops_and_trips_per_route
- ),
 compute_full_boarding_accesibility AS
  (
    SELECT 
@@ -104,7 +93,7 @@ compute_full_boarding_accesibility AS
    FROM   
           adding_bus_stops
  ),
-summary_of_accecibility_per_route AS
+summary_of_accesibility_per_route AS
  (
    SELECT 
           route_id,
@@ -148,15 +137,12 @@ total_opportunities_granular AS
           ctao.bad_vehicle,
           ctao.bad_stop,
           ctao.fully_accesible,
-          ctao.total_access_user_opportunities, ---is overcounting somehow
                (ctao.fully_innacesible + ctao.bad_vehicle + ctao.bad_stop + ctao.fully_accesible) AS 
-          validation, --- real total
-               (ctao.fully_innacesible + ctao.bad_vehicle + ctao.bad_stop + ctao.fully_accesible) - ctao.total_access_user_opportunities AS 
-          double_validation --- is giving error since is not the same name
+          total_transport_opportnities 
    FROM 
-          summary_of_accecibility_per_route cfb
+          summary_of_accesibility_per_route cfb
    LEFT JOIN 
-          compute_total_access_user_opportunities ctao
+          compute_total_stops_and_trips_per_route ctao
    ON 
           cfb.route_id = ctao.route_id
    ORDER BY 
