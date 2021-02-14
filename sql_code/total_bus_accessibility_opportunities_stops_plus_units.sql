@@ -149,7 +149,8 @@ total_opportunities_granular AS
           ctao.bad_stop,
           ctao.fully_accesible,
           ctao.total_access_user_opportunities, ---is overcounting somehow
-          ctao.fully_innacesible+bad_vehicle+bad_stop+fully_accesible AS validation, --- real total
+               (ctao.fully_innacesible + ctao.bad_vehicle + ctao.bad_stop + ctao.fully_accesible) AS 
+          validation, --- real total
                (ctao.fully_innacesible + ctao.bad_vehicle + ctao.bad_stop + ctao.fully_accesible) - ctao.total_access_user_opportunities AS 
           double_validation --- is giving error since is not the same name
    FROM 
