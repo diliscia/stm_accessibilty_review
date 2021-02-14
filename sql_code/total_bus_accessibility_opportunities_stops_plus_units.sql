@@ -5,7 +5,7 @@ with wheelchair_accessible_info_per_trip AS
           trip_id,
           wheelchair_accessible
    FROM 
-          diliscia.trips 
+          trips 
  ),
 routes_enriched_wheelchair_accessible AS
  (
@@ -18,7 +18,7 @@ routes_enriched_wheelchair_accessible AS
           route_type
    FROM 
           wheelchair_accessible_info_per_trip wai
-   LEFT JOIN  diliscia.routes rou
+   LEFT JOIN  routes rou
    ON rou.route_id = wai.route_id
  ),
 getting_stop_information AS
@@ -30,9 +30,9 @@ getting_stop_information AS
           tim.stop_sequence,
           stop.wheelchair_boarding
    FROM 
-          diliscia.stops stop
+          stops stop
    JOIN 
-          diliscia.stop_times tim
+          stop_times tim
    ON 
           tim.stop_id = stop.stop_code 
  ),
