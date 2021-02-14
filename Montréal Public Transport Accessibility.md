@@ -1,8 +1,5 @@
 
-<img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accessible-icon-dinamic.jpeg" width="200" height="200">
-
-
-# Montreal Public Transport Accessibility
+<img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accessible-icon-dinamic.jpeg" width="50" height="50"> # Montreal Public Transport Accessibility
 
 ## Context
 
