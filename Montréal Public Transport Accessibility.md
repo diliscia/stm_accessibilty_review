@@ -1,4 +1,5 @@
-![](image/accessible-icon-dinamic.jpeg)
+
+![test image size](image/accessible-icon-dinamic.jpeg){:height="20%" width="20%"}
 # Montreal Public Transport Accessibility
 
 ## Context
