@@ -7,7 +7,7 @@
 - The current project analyze the availability of accessibility in the STM system. 
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
 - The goal is to provide a more detailed approximation about the global access in the STM for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transport to complete of their full journey. 
-- Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". Howver based on the `schedule for buses with ramp at the front` is possible to guess that not all of them have the complete ideal equipment.
+- Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". However based on the `schedule for buses with ramp at the front` is possible to guess that not all of them have the complete ideal equipment.
 - At the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), more details about the methodology used.
 
 ---
@@ -40,20 +40,21 @@
 - Accessible stops are not enough, the person with reduced mobility requires an Accesible unit and to have boarding accesibility in the starting and ending stops.
 - Based on the data it was proposed a Bus Accessibility Opportunity index:
 
-    - When the stop is `boarding accesible` and the trip is `wheelchair accessible` the event is defined as `fully accesible`.
-    - When the stop is `boarding accesibile` but the trip is not `wheelchair accessible` the event is defined as `inadecuate vehicle`.
-    - When the stop is not `boarding accesibile` but the trip is `wheelchair accessible` the event is defined as `inadecuate stop`.
-    - When the stop is not `boarding accesibile` and the trip is not `wheelchair accessible` the event is defined as `fully_innacesible`.
+    - When the stop is `boarding accessible` and the trip is `wheelchair accessible` the event is defined as `fully accesible`.
+    - When the stop is `boarding accessibile` but the trip is not `wheelchair accessible` the event is defined as `inadecuate vehicle`.
+    - When the stop is not `boarding accessibile` but the trip is `wheelchair accessible` the event is defined as `inadecuate stop`.
+    - When the stop is not `boarding accessibile` and the trip is not `wheelchair accessible` the event is defined as `fully_innacesible`.
     
-- The data shows that just 2.5% of trips and fully inacessible and 63.7% are fully inacessible.
+- The data shows that just 2.5% of trips are Fully Inacessible and 63.7% are Fully Acessible.
 - The 31.2% of trips not accessible due to the vehicule, could cause some valid frustration to the users, however there are good propbabilities to have an approtiated vehicule in the next trip.
 
 ![](chart/BusComWCHAccess.png)
 
 ### Total Bus Accesibility Oportunities by Routes (Stop + Unit)
 
-- Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed by other routes with percentage of Fully Accessibility which are also located in the centre of the Metropolitan Area of the city. 
-- The routes with most stops without less wheelchair accessibility (more than 50%) are: 212-Sainte-Anne, 219 Chemin Sainte-Marie, 220-Kieran and 419-Express John Abbott, three of which go through the Autoroute 40 to or operates in West-Island.  
+- Data shows consistency in showing well defined areas or clouds of event points, where it can be seen that the Fully Accessibile events are betwwen 50% and 100% and that the Fully Innaccessible events are located mostly below the 25% with some exceptions, also well distributed in all the routes. 
+- Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed by other routes with percentage of Fully Accessibility which are also located in the [Centre of the Metropolitan Area of the city]((http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf)). 
+- The routes with most stops without less wheelchair accessibility (more than 50%) are: 212-Sainte-Anne, 219 Chemin Sainte-Marie, 220-Kieran and 419-Express John Abbott, three of which go through the Autoroute 40 to or operates in [West-Island]((http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf)).  
 - The amount of routes with more than 50% of Fully Accessibility is similar to the number of routes with less than 50%, being this numbers 110 and 105 respectively.    
 
 
