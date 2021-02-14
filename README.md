@@ -1,4 +1,4 @@
-# stm_accessibilty_review
+# STM Accessibilty Review ![](/accesibility.png)
 
 # Data exploration and tools
 - For this the data tables were taken directly form the [STM.com website](http://www.stm.info/en/about/developers). 
