@@ -11,7 +11,7 @@
 With the main purpose to use data analysis on public transit accessibility, the objetive is to provide more details about the real accesibility to the Bus and Metro in Montreal, using as proposed metrics: the access to Metro the stations and posibility to use the bus service offered by the STM.
 
 ## Data Quality test
-- Some data was dumplicated due to malformed names in the metro stations.
+- Some data was duplicated due to malformed names in the metro stations (accents, dash or numbers to idnetify the metro entrance). Some cleaning was perfomed to remove the duplications.
 - The total of trips in the data were validated using the public information on the STM website.
 - The total of available Bus units os not available, however the total of trips is consistent with the public information on the STM website. 
 
