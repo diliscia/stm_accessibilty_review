@@ -83,9 +83,9 @@ compute_full_boarding_accesibility AS
               WHEN wheelchair_accessible = 2
                    AND wheelchair_boarding = 2 then 'fully_innacesible'
               WHEN wheelchair_accessible = 2
-                   AND wheelchair_boarding = 1 then 'bad_vehicle'
+                   AND wheelchair_boarding = 1 then 'inadequate_vehicle'
               WHEN wheelchair_accessible = 1
-                   AND wheelchair_boarding = 2 then 'bad_stop'
+                   AND wheelchair_boarding = 2 then 'inadequate_stop'
               WHEN wheelchair_accessible = 1
                    AND wheelchair_boarding = 1 then 'fully_accesible'
               END AS 
@@ -150,15 +150,15 @@ total_opportunities_granular AS
  )
 
    SELECT
-         route_short_name,
-         route_long_name,
-              fully_innacesible*1.0/ total_transport_opportunities *100.0 as 
-         percentage_fully_innacesible,
-               inadequate_vehicle*1.0/ total_transport_opportunities *100.0 as 
-         percentage_inadequate_vehicle,
-               inadequate_stop*1.0/ total_transport_opportunities *100.0 as 
+          route_short_name,
+          route_long_name,
+               fully_innacesible * 1.0/ total_transport_opportunities * 100.0 as 
+          percentage_fully_innacesible,
+               inadequate_vehicle * 1.0/ total_transport_opportunities * 100.0 as 
+          percentage_inadequate_vehicle,
+              inadequate_stop * 1.0/ total_transport_opportunities * 100.0 as 
           percentage_inadequate_stop,
-                fully_accesible*1.0/ total_transport_opportunities *100.0 as 
+              fully_accesible * 1.0/ total_transport_opportunities * 100.0 as 
           percentage_fully_accesible
 
    FROM
