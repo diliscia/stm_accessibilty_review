@@ -1,5 +1,7 @@
 
-![test image size](image/accessible-icon-dinamic.jpeg){:height="20%" width="20%"}
+<img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accessible-icon-dinamic.jpeg" width="200" height="200">
+
+
 # Montreal Public Transport Accessibility
 
 ## Context
