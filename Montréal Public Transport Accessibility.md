@@ -4,7 +4,7 @@
 
 The current project analyses the availability of accessibility in the STM system. 
 The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
-For this the data tables were taken directly form the STM.com website (http://www.stm.info/en/about/developers). 
+For this the data tables were taken directly form the [STM.com website](http://www.stm.info/en/about/developers). 
 The analysis was done using SQL and Python.
 
 #### Caveat
@@ -25,7 +25,7 @@ In order to analyze this, it was proposed an accessibility index to compute the 
 If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a Very Accessible Station. If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a Little Accessible Station.
 Is interesting to notice that 9 stations have more than half of the entrances with Wheelchair Boarding Accessibility.
 
-![MetWCHAccess](/charts/MetWCHAccess.png)
+![MetWCHAccess](https://github.com/diliscia/stm_accessibilty_review/blob/main/chart/BusWCHAccess.png)
 
 ## Bus Trips Accessibility Based on Wheelchair Boarding
 
