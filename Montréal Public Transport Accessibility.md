@@ -36,10 +36,12 @@
 
 - Accessible stops are not enough, the person with rediced mobility requires a Accesible unite and have boarding accesibility in the starting and ending stop.
 - Based on the data it was proposed an Bus Accessibility Opportunity index:
-    1- When the stop is `boarding accesible` and the vehicule is `wheelchair accessible` the trip is defined as `fully accesible`.
-    2- When the stop is boarding accesibile but the vehicule is not `wheelchair accessible` the trip is defined as `bad vehicle`.
-    3- When the stop is not boarding accesibile but the vehicule is `wheelchair accessible` the trip is defined as `bad stop`.
-    4- When the stop is not boarding accesibile and the vehicule is not `wheelchair accessible` the trip is defined as `fully_innacesible`.
+
+    - When the stop is `boarding accesible` and the vehicule is `wheelchair accessible` the trip is defined as `fully accesible`.
+    - When the stop is boarding accesibile but the vehicule is not `wheelchair accessible` the trip is defined as `bad vehicle`.
+    - When the stop is not boarding accesibile but the vehicule is `wheelchair accessible` the trip is defined as `bad stop`.
+    - When the stop is not boarding accesibile and the vehicule is not `wheelchair accessible` the trip is defined as `fully_innacesible`.
+    
 - The data shows that just 2.5% of trips and fully inacessible and 63.7% are fully inacessible.
 - The 31.2% of trips not accessible due to the vehicule, could cause some valid frustration to the users, however there are good propbabilities to have a approtiated vehicule in the text trip.
 
@@ -50,8 +52,10 @@
 - However, there is significantly room for improvement in the Metro stations. 
 - Only 14 (20 %) of the 68 Montréal Metro stations have a at least one entrance with Wheelchairs Boarding Accessibility. 
 - In order to provide more details, it was proposed an accessibility index to compute the total of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
-    1- If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
-    2- If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a `Little Accessible Station`.
+
+    - If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
+    - If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a `Little Accessible Station`.
+    
 - Is interesting to notice that 9 stations have more than half of the entrances with Wheelchair Boarding Accessibility.
 
 ![](chart/MetWCHAccess.png)
