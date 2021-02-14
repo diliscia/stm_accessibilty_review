@@ -5,7 +5,7 @@ with wheelchair_accessible_info_per_trip AS
           trip_id,
           wheelchair_accessible
    FROM 
-          trips 
+          diliscia.trips 
  ),
 routes_enriched_wheelchair_accessible AS
  (
@@ -18,7 +18,7 @@ routes_enriched_wheelchair_accessible AS
           route_type
    FROM 
           wheelchair_accessible_info_per_trip wai
-   LEFT JOIN  routes rou
+   LEFT JOIN  diliscia.routes rou
    ON rou.route_id = wai.route_id
  ),
 getting_stop_information AS
@@ -27,12 +27,12 @@ getting_stop_information AS
           stop.stop_id,
           tim.trip_id,
           stop.stop_name,
-          stop.stop_sequence,
+          tim.stop_sequence,
           stop.wheelchair_boarding
    FROM 
-          stops stop
+          diliscia.stops stop
    JOIN 
-          stop_times tim
+          diliscia.stop_times tim
    ON 
           tim.stop_id = stop.stop_code 
  ),
@@ -131,13 +131,13 @@ total_opportunities_granular AS
    SELECT 
           cfb.route_short_name,
           cfb.route_long_name,
-          cfb.total_stops,
-          cfb.total_trips,
-          ctao.fully_innacesible,
-          ctao.bad_vehicle,
-          ctao.bad_stop,
-          ctao.fully_accesible,
-               (ctao.fully_innacesible + ctao.bad_vehicle + ctao.bad_stop + ctao.fully_accesible) AS 
+          ctao.total_stops,
+          ctao.total_trips,
+          cfb.fully_innacesible,
+          cfb.bad_vehicle,
+          cfb.bad_stop,
+          cfb.fully_accesible,
+               (cfb.fully_innacesible + cfb.bad_vehicle + cfb.bad_stop + cfb.fully_accesible) AS 
           total_transport_opportnities 
    FROM 
           summary_of_accesibility_per_route cfb
