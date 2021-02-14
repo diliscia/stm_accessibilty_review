@@ -1,4 +1,4 @@
-![](image/accesibility.png | width=50)
+![](image/accesibility.png)
 # STM Accessibilty Review 
 
 ## Data exploration and tools
