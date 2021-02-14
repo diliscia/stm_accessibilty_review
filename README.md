@@ -6,56 +6,63 @@
 
 - The current project analyze the availability of accessibility in the STM system. 
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
-- The goal is to provide an more detailed approximation about the global acces in the STM for people with mobility limitation, including people using Wheelchair and pares with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transit to complete of the full schedule. 
-- Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". Howver based on the `schedule for buses with ramp at the front` is possible to guess that not all of the have the complete ideal equipment.
-- At the [button of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), more details about the methodology used.
+- The goal is to provide a more detailed approximation about the global access in the STM for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. This accesibility is also helful for users with bikes who need plublic transport to complete of their full journey. 
+- Accodringto the STM "[All vehicles are wheelchair accessible]((https://www.stm.info/en/access/using-public-transit-wheelchair)), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". Howver based on the `schedule for buses with ramp at the front` is possible to guess that not all of them have the complete ideal equipment.
+- At the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), more details about the methodology used.
 
 ---
 
 #### Caveat
--  In the data is not available the actual number of STM bus units. However using the trips information it was possible to create a proxy value called `bus trips`.
+- In the data is not available the actual number of STM bus units. However using the trips information it was possible to create a proxy value called `bus trips`.
 - Is not clear in the data how is computed the total of services offered.
-- *boarding accesible* is related to the Bus stop infrastructure, "wheelchair boardings are possible from the location".*
-- *wheelchair accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
+- *wheelchair_boarding* is related to the Bus Stop or Metro Station infrastructure, "wheelchair boardings are possible from the location".*
+- *wheelchair_accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
 [STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
 ### Bus Stops Accessibility based on Wheelchair Boarding
 
-- 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. This is 
-- PLACEHOLDER TO ADD SOMETHING ABOUT WHERE ARE THE MOST STOPS WITHOUT ACCESS
+- 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. Is important to mention that the same access also can be used for bikes. According to the STM site all the STM buses are properly equipped to securely carry wheelchairs and bikes.This accessibility is also relevant for parents with small kids in strollers.
 
 ![](chart/BusWCHAccess.png)
 
 ### Bus Trips Accessibility Based on Wheelchair Boarding
 
-- Since it was not possible to find the number of Bus units, it was used the variable `Wheelchair Accessible` related to the trips.
+- Since it was not possible to find the number of Bus units, it was used the variable *wheelchair_accessible* related to the trips.
 - The same bus can do more than one trip, but it won't change during the trip.
-- Based on the results, 65% of the bus trips are indicated as Wheelchair Accessible. That differs from the `all vehicules accesible`
-- It's possible that the variable `wheelchair accesible` in the trip data is defined with a different approach and the 35% gap could be related to the availability to the `ramp at the front`.
+- Based on the results, 65% of the bus trips are indicated as Wheelchair Accessible. That differs from the `All vehicles are wheelchair accessible` information at the STM website.
+- It's possible that the variable *wheelchair_accesible* in the trips data is defined with a different approach and the 35% gap could be related to the availability of the `ramp at the front`.
 
 ![](chart/TripsWCHAccess.png)
 
 ### Total Bus Accesibility Oportunities (Stop + Unit)
 
-- Accessible stops are not enough, the person with rediced mobility requires a Accesible unite and have boarding accesibility in the starting and ending stop.
-- Based on the data it was proposed an Bus Accessibility Opportunity index:
+- Accessible stops are not enough, the person with reduced mobility requires an Accesible unit and to have boarding accesibility in the starting and ending stops.
+- Based on the data it was proposed a Bus Accessibility Opportunity index:
 
-    - When the stop is `boarding accesible` and the vehicule is `wheelchair accessible` the trip is defined as `fully accesible`.
-    - When the stop is `boarding accesibile` but the vehicule is not `wheelchair accessible` the trip is defined as `bad vehicle`.
-    - When the stop is not `boarding accesibile` but the vehicule is `wheelchair accessible` the trip is defined as `bad stop`.
-    - When the stop is not `boarding accesibile` and the vehicule is not `wheelchair accessible` the trip is defined as `fully_innacesible`.
+    - When the stop is `boarding accesible` and the trip is `wheelchair accessible` the event is defined as `fully accesible`.
+    - When the stop is `boarding accesibile` but the trip is not `wheelchair accessible` the event is defined as `inadecuate vehicle`.
+    - When the stop is not `boarding accesibile` but the trip is `wheelchair accessible` the event is defined as `inadecuate stop`.
+    - When the stop is not `boarding accesibile` and the trip is not `wheelchair accessible` the event is defined as `fully_innacesible`.
     
 - The data shows that just 2.5% of trips and fully inacessible and 63.7% are fully inacessible.
-- The 31.2% of trips not accessible due to the vehicule, could cause some valid frustration to the users, however there are good propbabilities to have a approtiated vehicule in the text trip.
+- The 31.2% of trips not accessible due to the vehicule, could cause some valid frustration to the users, however there are good propbabilities to have an approtiated vehicule in the next trip.
 
 ![](chart/BusComWCHAccess.png)
+
+### Total Bus Accesibility Oportunities by Routes (Stop + Unit)
+
+- Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed by other routes with percentage of Fully Accessibility which are also located in the centre of the Metropolitan Area of the city. 
+- The routes with most stops without less wheelchair accessibility (more than 50%) are: 212-Sainte-Anne, 219 Chemin Sainte-Marie, 220-Kieran and 419-Express John Abbott, three of which go through the Autoroute 40 to or operates in West-Island.  
+- The amount of routes with more than 50% of Fully Accessibility is similar to the number of routes with less than 50%, being this numbers 110 and 105 respectively.    
+
+
 
 ### Metro Stations Accessibility Based on Wheelchair Boarding
 
 - However, there is significantly room for improvement in the Metro stations. 
 - Only 14 (20 %) of the 68 Montréal Metro stations have a at least one entrance with Wheelchairs Boarding Accessibility. 
-- In order to provide more details, it was proposed an accessibility index to compute the total of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
+- In order to provide more details, it was proposed an Accessibility Index to compute the total of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
 
     - If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
     - If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a `Little Accessible Station`.
