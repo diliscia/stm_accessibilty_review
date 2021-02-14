@@ -94,7 +94,7 @@
 ## Data exploration and tools
 - For this analysis it was used public data was accesible on the [STM.com website](http://www.stm.info/en/about/developers). 
 - The data was downloaded on February 2021 and according to the `calendar` table contains data related to the trips from October 26th 2020 to March 21st, 2021 
-- The analysis was done using SQL and Python.
+- The analysis was done using SQL.
 
 ## Data ask
 With the main purpose to use data analysis on public transit accessibility, the objetive is to provide more details about the real accesibility to the Bus and Metro in Montreal, using as proposed metrics: the access to Metro the stations and posibility to use the bus service offered by the STM.
@@ -104,21 +104,15 @@ With the main purpose to use data analysis on public transit accessibility, the 
 - The total of trips in the data were validated using the public information on the STM website.
 - The total of available Bus units os not available, however the total of trips is consistent with the public information on the STM website. 
 
-## Data Modeling
+## Data Modeling and Analysis
 
 Four SQL queries were required to model and perfom the initial data exploration:
 - **bus_stop_wheelchair_boarding**: to validate the total of bus stops adecuate for users on wheelchair.
 - **bus_trips_wheelchair_accessibility**: to validate the total of bus trips adecuate for users on wheelchair.
 - **metro_stations_wheelchair_boarding_accessibility**: to validate the total of metro stations with adecuate access for users on wheelchair
 - **total_bus_accessibility_opportunities_stops_plus_units**: combining the bus stops data and the trips accesibility, to create an index based on the total ooporunities to effectively board a accesible vehicule from an accesible stop.
+- **total_bus_accessibility_opportunities_by_route.sql**:
 
 All queries are included in SQL files (sql_code folder).
 
-## Data Analysis
-
-Additinally some Statiscs Analysis were done using Pyhton:
-
-PLACE HOLDER TO EXPLAIN THE PYTHON WORK DONE
-
-All code is included (python_code folder).
 
