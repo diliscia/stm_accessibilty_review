@@ -79,8 +79,8 @@
 ![](chart/BusAccPres.png)
 
 ### Vehicle and Stops Accessibility by Routes
-- Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means the the chances to board from an `adequate stop` are really high doesn't matter in wich route are  you traveling . 
-- On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of 'accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). This meas than even if you are in an 'adequate stop' you may catch an 'inadequate vehicle`. This means that the offer of accessible vehicles must increse to catch up with the stops.  
+- Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in wich route you are traveling. 
+- On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). This meas than even if you are in an `adequate stop` you may catch an `inadequate vehicle`. This means that the offer of accessible vehicles must increse to catch up with the stops.  
 
 ![](chart/VehStoAcc.png)
 
