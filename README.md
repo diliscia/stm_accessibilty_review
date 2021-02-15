@@ -91,7 +91,7 @@
 
 <img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accesibility.png" width="80" height="80"> 
 
-# STM Accessibilty Review. Metodology notes
+# STM Accessibility Review. Metodology notes
 
 ## Data Exploration and Tools
 - For this analysis it was used public data accessible on the [STM.com website](http://www.stm.info/en/about/developers). 
