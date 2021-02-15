@@ -62,7 +62,7 @@ Regarding the Metro stations:
 ### Total Bus Accessibility Opportunities by Routes (Stop + Unit)
 
 - Data shows consistency by showing well defined areas or clouds of event points even distributed overall the routes. 
-- The `Fully Accessible` events are on the top of the chart (higher percentages) and `Fully Inaccessible` events are mainly at the bottom (lower percentages), with few outliners `Fully Inaccessible`  with higth percentage
+- The `Fully Accessible` events are on the top of the chart (higher percentages) and `Fully Inaccessible` events are mainly at the bottom (lower percentages), with few outliners `Fully Inaccessible`  with high percentage
 - It can be seen that the `Fully Accessible` events are between 50% and 100% present in all the routes.
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analyzed in the following: 
 
