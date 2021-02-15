@@ -66,9 +66,9 @@
      - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
      - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
      - The routes with more `Fully Inaccessibility` events superior to 50%, travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf): 
-           - 212-Sainte-Anne.
-           - 219 Chemin Sainte-Marie. 
-           - 220-Kieran and 419-Express John Abbott.
+         - 212-Sainte-Anne.
+         - 219 Chemin Sainte-Marie. 
+         - 220-Kieran and 419-Express John Abbott.
 
 ![](chart/BusComWCHAccessScatter.png)
 
