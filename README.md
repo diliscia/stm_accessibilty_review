@@ -100,8 +100,8 @@
 ## Conclusion
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
 - The STM bus network has more than 60% of `Fully Accessibility` in all the Metropolitan Area.
-- The chances to take an `adequate vehicle` from an `adequate stop` is higher in close to the Montréal Metropolitan Centre.
-- The chances of boarding from an `adecuate stop` is higher than taking an `adequate vehicle`.
+- The chance to take an `adequate vehicle` from an `adequate stop` is higher close to the Montréal Metropolitan Centre.
+- The chance of boarding from an `adecuate stop` is higher than taking an `adequate vehicle`.
 - The availability of `adequate vehicles` must increase to catch-up witht the `adequate stops`.
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equipped with elevators to facilitate secure access with a wheelchair.
 - Some Metro Stations have over half of their entrances accessible.
