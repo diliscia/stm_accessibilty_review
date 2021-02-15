@@ -36,7 +36,7 @@ Regarding the Metro stations:
 
 ### Bus Trips Accessibility Based on Wheelchair Accesible
 
-- Since it was not possible to find the number of bus units, the variable *wheelchair_accessible* related to the trips was used.
+- Since it was not possible to find the number of bus units, the variable **wheelchair_accessible** related to the trips was used.
 - A same bus can do more than one trip, but the bus won't change during the trip.
 - Based on the results, 65% of the bus trips are indicated as Wheelchair Accessible. This differs from the `All vehicles are wheelchair accessible` information on the STM website.
 - It's possible that the variable *wheelchair_accessible* in the trips data is defined with a different approach and that the 35% gap could be related to the availability of the `ramp at the front` or number of wheel_chairs that can be accommodated inside the unit.
