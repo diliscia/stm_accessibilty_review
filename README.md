@@ -7,7 +7,7 @@
 - The current project analyzes the availability of accessible transport in the STM system. 
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
 - The goal is to summarize overall STM access for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. Accessible public transport is also helpful for users with bikes who need public transport to complete their journey. 
-- According to the STM website "[All vehicles are wheelchair accessible](https://www.stm.info/en/access/using-public-transit-wheelchair), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". However, given that exists a schedules for `buses with a ramp at the front`, it's likely that not all buses have the complete ideal equipment.
+- According to the STM website "[All vehicles are wheelchair accessible](https://www.stm.info/en/access/using-public-transit-wheelchair), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". However, given that there exists a schedule for `buses with a ramp at the front`, it's likely that not all buses have the complete ideal equipment.
 - In this document, I start by summarizing my findings. Afterwards at the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), you can find details about the methodology used.
 
 ---
