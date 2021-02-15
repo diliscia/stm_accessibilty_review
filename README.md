@@ -1,6 +1,6 @@
 <img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accessible-icon-dinamic.jpeg" width="80" height="80"> 
 
-# Montréal Public Transport Accessibility
+# Montreal Public Transport Accessibility
 
 ## Context
 
@@ -30,7 +30,7 @@ Regarding the Metro stations:
 
 ### Bus Stops Accessibility Based on Wheelchair Boarding
 
-- 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. Is important to mention that the same access also can be used for bikes. According to the STM site all the STM buses are properly equipped to securely carry wheelchairs and bikes. This accessibility is also relevant for parents with small kids in strollers.
+- 91% of all Montreal Bus stops have Wheelchair Boarding Accessibility. Is important to mention that the same access also can be used for bikes. According to the STM site all the STM buses are properly equipped to securely carry wheelchairs and bikes. This accessibility is also relevant for parents with small kids in strollers.
 
 ![](chart/BusWCHAccess.png)
 
@@ -98,7 +98,7 @@ Regarding the Metro stations:
 
 ### Metro Stations Accessibility Based on Wheelchair Boarding
 
-- However, there is significantly room for improvement in the [Metro Stations](http://www.stm.info/en/info/networks/metro). Only 14 (20%) of the 68 Montréal Metro Stations have at least one entrance with Wheelchairs Boarding Accessibility.
+- However, there is significantly room for improvement in the [Metro Stations](http://www.stm.info/en/info/networks/metro). Only 14 (20%) of the 68 Montreal Metro Stations have at least one entrance with Wheelchairs Boarding Accessibility.
 - In order to provide more details, I created an Accessibility Index to compute the number of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
 
     - If more than half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
@@ -111,9 +111,9 @@ Regarding the Metro stations:
 ---
 ## Conclusion
 Based on the STM website, improving accessibility in the system is a priority and the data could help to find the best and more impactful opportunities for the affected users, here some useful insights:
-- The Montréal Bus offer seems pretty friendly for users with reduced mobility.
+- The Montreal Bus offer seems pretty friendly for users with reduced mobility.
 - The STM bus network has more than 60% of `Fully Accessibility` in all the Metropolitan Area.
-- The chance to take an `adequate vehicle` from an `adequate stop` is higher close to the Montréal Metropolitan Centre.
+- The chance to take an `adequate vehicle` from an `adequate stop` is higher close to the Montreal Metropolitan Centre.
 - The chance of boarding from an `adequate stop` is higher than taking an `adequate vehicle`.
 - The availability of `adequate vehicles` must increase to catch-up with the `adequate stops`.
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equipped with elevators to facilitate secure access with a wheelchair.
@@ -122,8 +122,10 @@ Based on the STM website, improving accessibility in the system is a priority an
 
 
 ## Next Steps
-* Cross reference the data with traffic and trips usage capacity, to validate the best times for people with reduced mobility to use the public transit.
-* Map the most accessible friendly routes in Montréal.
+* Cross reference the data with traffic and trips usage capacity, to validate the best t
+
+imes for people with reduced mobility to use the public transit.
+* Map the most accessible friendly routes in Montreal.
 * Cross reference the accessibility data with cultural routes or any other activities, in order to offer the best options to users with reduced mobility.
 * Follow the improvement of the accessibility in the whole network through time.
 
@@ -140,7 +142,7 @@ Based on the STM website, improving accessibility in the system is a priority an
 - The analysis was done using SQL.
 
 ## Data Task
-- The objective of the analysis is to provide more details about the real accessibility of Buses and Metro Stations in Montréal.
+- The objective of the analysis is to provide more details about the real accessibility of Buses and Metro Stations in Montreal.
 
 ## Caveat
 - The actual number of STM bus units is not available in the data. However, using the trips information, it was possible to create a proxy value called `bus trips`.
