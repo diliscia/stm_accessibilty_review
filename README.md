@@ -155,7 +155,7 @@ Based on the STM website, improving accessibility in the system is a priority an
 
 ## Data Modeling and Analysis
 
-Five SQL queries were required to model and perfom the initial data exploration:
+Five SQL queries were required to model and perform the initial data exploration:
 - **bus_stop_wheelchair_boarding.sql**: to validate the total of bus stops adequate for users on a wheelchair.
 - **bus_trips_wheelchair_accessibility.sql**: to validate the total of bus trips adequate for users on wheelchair.
 - **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adequate access for users on wheelchair
