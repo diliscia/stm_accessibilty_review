@@ -72,9 +72,9 @@
 ![](chart/BusComWCHAccessScatter.png)
 
 ### Presence of the Bus Accessibility Combination Events in the Routes
-- Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus over 2/3 of all the routes the users have more than 50% of chances of boarding an `adequate vehicle` form an `adequate bus stop`.
+- Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus, in more than 2/3 of the total routes the user has more than 50% of chances of boarding an `adequate vehicle` from an `adequate bus stop`.
 - The other events (`Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`) have a presence below 50% each in more than 80% of the routes.
-- More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadequate vehicle` is low, but the chance of boarding from a `inadequate stop` is even lower.  
+- More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadequate vehicle` is low, but the chance of boarding from a `inadequate stop` is even lower.
 
 ![](chart/BusAccPres.png)
 
