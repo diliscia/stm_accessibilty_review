@@ -11,14 +11,22 @@
 - In this document, I start by summarizing my findings. Afterwards at the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), you can find etails about the methodology used.
 
 ---
+## Content
+The analysis is presented in two main blocks, Bus and Metro
 
-#### Caveat
-- The actual number of STM bus units is not available in the data. However, using the trips information, it was possible to create a proxy value called `bus trips`.
-- The dataset does not clarify the computation used for “total services offered”.
-- *wheelchair_boarding* is related to the Bus Stop or Metro Station infrastructure, "wheelchair boardings are possible from the location".*
-- *wheelchair_accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
-[STM data dictionary](https://developers.google.com/transit/gtfs/reference)
+Regarding the Bus it was possible to analyzse: 
+- [Bus Stops Accessibility Based on Wheelchair Boarding](https://github.com/diliscia/stm_accessibilty_review#bus-stops-accessibility-based-on-wheelchair-boarding)
+- [Bus Trips Accessibility Based on Wheelchair Accesible](https://github.com/diliscia/stm_accessibilty_review#bus-trips-accessibility-based-on-wheelchair-accesible)
+- [Total Bus Accessibility Oportunities (Stop + Unit)](https://github.com/diliscia/stm_accessibilty_review#total-bus-accessibility-oportunities-stop--unit)
+- [Total Bus Accessibility Opportunities by Routes (Stop + Unit)](https://github.com/diliscia/stm_accessibilty_review#total-bus-accessibility-opportunities-by-routes-stop--unit)
+- [Presence of the Bus Accessibility Combination Events in the Routes](https://github.com/diliscia/stm_accessibilty_review#presence-of-the-bus-accessibility-combination-events-in-the-routes)
+- [Vehicle and Stops Accessibility by Routes](https://github.com/diliscia/stm_accessibilty_review#vehicle-and-stops-accessibility-by-routes)
+
+Regarding the Metro stations:
+- [Metro Stations Accessibility Based on Wheelchair Boarding](https://github.com/diliscia/stm_accessibilty_review#metro-stations-accessibility-based-on-wheelchair-boarding)
+
 ---
+# STM Bus Accessibility
 
 ### Bus Stops Accessibility Based on Wheelchair Boarding
 
@@ -26,7 +34,7 @@
 
 ![](chart/BusWCHAccess.png)
 
-### Bus Trips Accessibility Based on Wheelchair Boarding
+### Bus Trips Accessibility Based on Wheelchair Accesible
 
 - Since it was not possible to find the number of bus units, the variable *wheelchair_accessible* related to the trips was used.
 - A same bus can do more than one trip, but the bus won't change during the trip.
@@ -80,9 +88,12 @@
 
 ### Vehicle and Stops Accessibility by Routes
 - Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in wich route you are traveling. 
-- On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). This meas than even if you are in an `adequate stop` you may catch an `inadequate vehicle`. This means that the offer of accessible vehicles must increse to catch up with the stops.  
+- On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). 
+- This meas than even if you are in an `adequate stop` you may catch an `inadequate vehicle`. 
 
 ![](chart/VehStoAcc.png)
+
+# STM Metro Accessibility
 
 ### Metro Stations Accessibility Based on Wheelchair Boarding
 
@@ -128,6 +139,13 @@
 
 ## Data Task
 - The objective of the analysis is to provide more details about the real accessibility of Buses and Metro Stations in Montréal.
+
+## Caveat
+- The actual number of STM bus units is not available in the data. However, using the trips information, it was possible to create a proxy value called `bus trips`.
+- The dataset does not clarify the computation used for “total services offered”.
+- *wheelchair_boarding* is related to the Bus Stop or Metro Station infrastructure, "wheelchair boardings are possible from the location".*
+- *wheelchair_accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
+[STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 
 ## Data Quality Test
 - Some data was duplicated due to malformed names in the Metro Stations (accents, dash or numbers to identify the Metro entrances). Some cleaning was performed to remove the duplications.
