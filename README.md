@@ -34,7 +34,7 @@ Regarding the Metro stations:
 
 ![](chart/BusWCHAccess.png)
 
-### Bus Trips Accessibility Based on Wheelchair Accesible
+### Bus Trips Accessibility Based on Wheelchair Accessible
 
 - Since it was not possible to find the number of bus units, the variable **wheelchair_accessible** related to the trips was used.
 - A same bus can do more than one trip, but the bus won't change during the trip.
