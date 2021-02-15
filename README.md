@@ -62,7 +62,7 @@ Regarding the Metro stations:
 ### Total Bus Accessibility Opportunities by Routes (Stop + Unit)
 
 - Data shows consistency by showing well defined areas or clouds of event points even distributed overall the routes. 
-- The `Fully Accessible` events are on the top of the chart (higher percentages) and `Fully Inaccessible` events are mainly at the bottom (lower percentages), with few outliners `Fully Inaccessible`  with high percentage
+- The `Fully Accessible` events are on the top of the chart (higher percentages) and `Fully Inaccessible` events are mainly at the bottom (lower percentages), with few outliners `Fully Inaccessible`  with high percentage.
 - It can be seen that the `Fully Accessible` events are between 50% and 100% present in all the routes.
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analyzed in the following: 
 
@@ -88,8 +88,9 @@ Regarding the Metro stations:
 ![](chart/BusAccPres.png)
 
 ### Vehicle and Stops Accessibility by Routes
-- Over 92% of the routes have a high percentage (75-100%) of `aboardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in which route you are traveling. 
-- On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). 
+- It was computed an Accesibility average per route, either for stops and vehicules accesibility.
+- Over 92% of the routes have a high percentage on average (75-100%) of `aboardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in which route you are traveling. 
+- On the other hand, the vehicle availability on average (trips) is good, but not as good as the stops. 71% of the routes have more than 50% on average of `accessible vehicles`, but just 28% of the routes on everage have a high percentage (75-100%). 
 
 ![](chart/VehStoAcc.png)
 
