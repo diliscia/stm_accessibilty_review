@@ -6,7 +6,7 @@
 
 - The current project analyze the availability of accessibility in the STM system. 
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
-- The goal is to provide a more detailed approximation about the global access in the STM for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. This accessibility is also helful for users with bikes who need plublic transport to complete of their full journey. 
+- The goal is to provide a more detailed approximation about the global access in the STM for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. This accessibility is also helpful for users with bikes who need plublic transport to complete of their full journey. 
 - According to the STM "[All vehicles are wheelchair accessible](https://www.stm.info/en/access/using-public-transit-wheelchair), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". However based on the `schedule for buses with ramp at the front` is possible to guess that not all of them have the complete ideal equipment.
 - At the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), more details about the methodology used.
 
@@ -20,7 +20,7 @@
 [STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
-### Bus Stops Accessibility based on Wheelchair Boarding
+### Bus Stops Accessibility Based on Wheelchair Boarding
 
 - 91% of all Montréal Bus stops have Wheelchair Boarding Accessibility. Is important to mention that the same access also can be used for bikes. According to the STM site all the STM buses are properly equipped to securely carry wheelchairs and bikes. This accessibility is also relevant for parents with small kids in strollers.
 
@@ -53,10 +53,10 @@
 
 ### Total Bus Accesibility Oportunities by Routes (Stop + Unit)
 
-- Data shows consistency by showing well defined areas or clouds of event points even distributed overall the routes. It can be seen that the Fully Accessibile events are between 50% and 100% present in all the routes and that the Fully Innaccessible events are located mostly below the 25% with the few isolated cases that are analized in the following. 
-- Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed by other routes with high Fully Accessibility events percentage. This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
+- Data shows consistency by showing well defined areas or clouds of event points even distributed overall the routes. It can be seen that the Fully Accessibile events are between 50% and 100% present in all the routes and that the Fully Inaccessible events are located mostly below the 25% with a few isolated cases that are analized in the following. 
+- Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed close by other routes with high Fully Accessibility events percentage. This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
 - Over 67% of the routes have more than 50% of Fully Accessibility events, while the other events (Inadequate Vehicle, Fully Inaccessibility and Inadequate Stop) have a presence below 50% each in more than 80% of the routes. Actually more than 95% of the Fully Inaccessibility and Inadequate Stop events are present in less than 20% of the routes.
-- The routes with more Fully Inaccessibility events (superior to 50%) are 212-Sainte-Anne, 219 Chemin Sainte-Marie, 220-Kieran and 419-Express John Abbott, three of which travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf).
+- The routes with more Fully Inaccessibility events (superior to 50%) are 212-Sainte-Anne, 219 Chemin Sainte-Marie, 220-Kieran and 419-Express John Abbott, three of which travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf)(http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf).
 
 ![](chart/BusComWCHAccessScatter.png)
 
@@ -82,9 +82,9 @@
 
 ## Next Steps
 * Cross the data with traffic and trips usage capacity, to validate the best times for people with reduced mobility to use the public transit.
-* Map the most accessible friendly routes in Montreal.
+* Map the most accessible friendly routes in Montréal.
 * Cross the accessibility data with cultural routes or any other activities, in order to offer the best options to users with reduced mobility.
-* Follow the improvement of the accessibility in the whole network through time. 
+* Follow the improvement of the accessibility in the whole network through time.
 
 ---
 ---
@@ -94,17 +94,17 @@
 # STM Accessibilty Review. Metodology notes
 
 ## Data Exploration and Tools
-- For this analysis it was used public data accesible on the [STM.com website](http://www.stm.info/en/about/developers). 
+- For this analysis it was used public data accessible on the [STM.com website](http://www.stm.info/en/about/developers). 
 - The data was downloaded on February 2021 and according to the `calendar` table it contains data related to the trips from October 26th 2020 to March 21st, 2021. 
 - The analysis was done using SQL.
 
-## Data ask
+## Data Task
 - With the main purpose to use data analysis on public transit accessibility, the objetive is to provide more details about the real accessibility to the Buses and Metro Stations in Montréal, using as proposed metrics: the access to the Metro Stations and posibility of use of the bus service offered by the STM.
 
 ## Data Quality Test
 - Some data was duplicated due to malformed names in the Metro Stations (accents, dash or numbers to identify the Metro entrances). Some cleaning was perfomed to remove the duplications.
 - The total of trips in the data were validated using the public information on the STM website.
-- The total of available Bus units is not available, however the total of trips (withing the calendar window) is consistent with the public information on the STM website. 
+- The total of Bus units is not available, however the total of trips (withing the calendar window) is consistent with the public information on the STM website. 
 
 ## Data Modeling and Analysis
 
@@ -112,7 +112,7 @@ Five SQL queries were required to model and perfom the initial data exploration:
 - **bus_stop_wheelchair_boarding.sql**: to validate the total of bus stops adecuate for users on wheelchair.
 - **bus_trips_wheelchair_accessibility.sql**: to validate the total of bus trips adecuate for users on wheelchair.
 - **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adecuate access for users on wheelchair
-- **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total ooportunities to effectively board an accessible vehicle from an accessible stop.
-- **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total oportunities of full access presented to the users for each offered bus route in the system.   
+- **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total opportunities to effectively board an accessible vehicle from an boardable stop.
+- **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total opportunities of full access presented to the users for each offered bus route in the system.   
 
 All queries are included in SQL files (sql_code folder).
