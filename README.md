@@ -58,9 +58,9 @@
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analized in the following: 
 
      - Three routes have 100% Fully Accessibility, followed close by other routes with high Fully Accessibility events percentage:
-            -  13-Christophe-Colomb 
-            - 77-Station Lionel-Groulx / CUSM 
-            - 193-Jarry. 
+         -  13-Christophe-Colomb 
+         - 77-Station Lionel-Groulx / CUSM 
+         - 193-Jarry. 
      - This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
      - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
      - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
