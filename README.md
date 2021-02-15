@@ -62,9 +62,9 @@
          - 77-Station Lionel-Groulx / CUSM 
          - 193-Jarry. 
      - This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
-     - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
-     - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
-     - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
+ - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
+ - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
+ - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
      - The routes with more `Fully Inaccessibility` events superior to 50%, travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf): 
          - 212-Sainte-Anne.
          - 219 Chemin Sainte-Marie. 
