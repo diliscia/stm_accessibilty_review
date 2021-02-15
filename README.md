@@ -62,6 +62,7 @@ Regarding the Metro stations:
 ### Total Bus Accessibility Opportunities by Routes (Stop + Unit)
 
 - Data shows consistency by showing well defined areas or clouds of event points even distributed overall the routes. 
+- The `Fully Accessible` events are on the top of the chart (higher percentages) and `Fully Inaccessible` events are mainly at the bottom (lower percentages), with few outliners `Fully Inaccessible`  with higth percentage
 - It can be seen that the `Fully Accessible` events are between 50% and 100% present in all the routes.
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analyzed in the following: 
 
@@ -89,7 +90,6 @@ Regarding the Metro stations:
 ### Vehicle and Stops Accessibility by Routes
 - Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in wich route you are traveling. 
 - On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). 
-- This meas than even if you are in an `adequate stop` you may catch an `inadequate vehicle`. 
 
 ![](chart/VehStoAcc.png)
 
@@ -109,6 +109,7 @@ Regarding the Metro stations:
 
 ---
 ## Conclusion
+Based on the STM website, improving accessibility in the system is a priority and the data could help to find the best and more impactful opportunities for the affected users, here some useful insights:
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
 - The STM bus network has more than 60% of `Fully Accessibility` in all the Metropolitan Area.
 - The chance to take an `adequate vehicle` from an `adequate stop` is higher close to the Montréal Metropolitan Centre.
@@ -116,7 +117,7 @@ Regarding the Metro stations:
 - The availability of `adequate vehicles` must increase to catch-up witht the `adequate stops`.
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equipped with elevators to facilitate secure access with a wheelchair.
 - Some Metro Stations have over half of their entrances accessible.
-- Based on the STM website, improving accessibility in the system is a priority and the data could help to find the best and more impactful opportunities for the affected users.
+
 
 
 ## Next Steps
