@@ -129,5 +129,6 @@ Five SQL queries were required to model and perfom the initial data exploration:
 - **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adequate access for users on wheelchair
 - **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total opportunities to effectively board an accessible vehicle from an boardable stop.
 - **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total opportunities of full access presented to the users for each offered bus route in the system.   
+- **total_bus_accessibility_average_per_route.sql**: compute the average of accesible stops and accesible vehicules per route.
 
 All queries are included in SQL files (sql_code folder).
