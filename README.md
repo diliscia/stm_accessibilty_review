@@ -57,15 +57,15 @@
 - It can be seen that the `Fully Accessibile` events are between 50% and 100% present in all the routes.
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analized in the following: 
 
-        - Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed close by other routes with high Fully Accessibility events percentage. 
-        - This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
-        - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
-        - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
-        - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
-        - The routes with more `Fully Inaccessibility` events superior to 50%, travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf): 
-            - 212-Sainte-Anne.
-            - 219 Chemin Sainte-Marie. 
-            - 220-Kieran and 419-Express John Abbott.
+     - Three routes have 100% Fully Accessibility, 13-Christophe-Colomb, 77-Station Lionel-Groulx / CUSM and 193-Jarry, followed close by other routes with high Fully Accessibility events percentage. 
+     - This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
+     - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
+     - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
+     - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
+     - The routes with more `Fully Inaccessibility` events superior to 50%, travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf): 
+           - 212-Sainte-Anne.
+           - 219 Chemin Sainte-Marie. 
+           - 220-Kieran and 419-Express John Abbott.
 
 ![](chart/BusComWCHAccessScatter.png)
 
