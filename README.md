@@ -8,16 +8,16 @@
 - The actual analysis involves boarding accessibility in the Metro Stations, Bus Stops and Bus Units. 
 - The goal is to summarize overall STM access for people with mobility limitation, including people using wheelchairs and parents with kids that require strollers. Accessible public transport is also helpful for users with bikes who need public transport to complete their journey. 
 - According to the STM website "[All vehicles are wheelchair accessible](https://www.stm.info/en/access/using-public-transit-wheelchair), with the exception of minibuses operated on Navette Or shuttles and the 212 - Sainte-Anne line.". However, given that exists a schedules for `buses with a ramp at the front`, it's likely that not all buses have the complete ideal equipment.
-- In this document, I start by summarizing my findings. Afterwards at the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), you can find etails about the methodology used.
+- In this document, I start by summarizing my findings. Afterwards at the [bottom of this readme](https://github.com/diliscia/stm_accessibilty_review/blob/main/README.md#stm-accessibilty-review-metodology-notes), you can find details about the methodology used.
 
 ---
 ## Content
 The analysis is presented in two main blocks, Bus and Metro
 
-Regarding the Bus it was possible to analyzse: 
+Regarding the Bus it was possible to analyze: 
 - [Bus Stops Accessibility Based on Wheelchair Boarding](https://github.com/diliscia/stm_accessibilty_review#bus-stops-accessibility-based-on-wheelchair-boarding)
-- [Bus Trips Accessibility Based on Wheelchair Accesible](https://github.com/diliscia/stm_accessibilty_review#bus-trips-accessibility-based-on-wheelchair-accesible)
-- [Total Bus Accessibility Oportunities (Stop + Unit)](https://github.com/diliscia/stm_accessibilty_review#total-bus-accessibility-oportunities-stop--unit)
+- [Bus Trips Accessibility Based on Wheelchair Accessible](https://github.com/diliscia/stm_accessibilty_review#bus-trips-accessibility-based-on-wheelchair-accesible)
+- [Total Bus Accessibility Opportunities (Stop + Unit)](https://github.com/diliscia/stm_accessibilty_review#total-bus-accessibility-oportunities-stop--unit)
 - [Total Bus Accessibility Opportunities by Routes (Stop + Unit)](https://github.com/diliscia/stm_accessibilty_review#total-bus-accessibility-opportunities-by-routes-stop--unit)
 - [Presence of the Bus Accessibility Combination Events in the Routes](https://github.com/diliscia/stm_accessibilty_review#presence-of-the-bus-accessibility-combination-events-in-the-routes)
 - [Vehicle and Stops Accessibility by Routes](https://github.com/diliscia/stm_accessibilty_review#vehicle-and-stops-accessibility-by-routes)
@@ -43,7 +43,7 @@ Regarding the Metro stations:
 
 ![](chart/TripsWCHAccess.png)
 
-### Total Bus Accessibility Oportunities (Stop + Unit)
+### Total Bus Accessibility Opportunities (Stop + Unit)
 
 - Accessible stops are not enough, a person with reduced mobility requires an Accessible unit and to have accessible boarding both where they get on and where they get off.
 - For the purpose of this analysis, an **event** is defined as the combination of a trip and a stop. 
@@ -55,7 +55,7 @@ Regarding the Metro stations:
     - When the stop is not `boarding accessible` and the trip is not `wheelchair accessible` the event is defined as `fully_innaccessible`.
     
 - The data shows that just 2.5% of all the events are Fully Inaccessible and 63.7% are Fully Accessible. 
-- The 31.2% of the events are not accessible due to the vehicule. This could cause some valid frustration to the users, however there is high probability that the next trip will have an appropriate vehicule.
+- 31.2% of the events are not accessible due to the vehicule. This could cause some valid frustration to the users, however there is a high probability that the next trip will have an appropriate vehicule.
 
 ![](chart/BusComWCHAccess.png)
 
@@ -76,19 +76,19 @@ Regarding the Metro stations:
         - 219 Chemin Sainte-Marie 
         - 220-Kieran 
         - 419-Express John Abbott
-    - This 4 routes travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). This reinforces that if you are taking a bus from a route within the Centre of the Metropolitan Area of the City you have more chances to board an `adequate vehicle` from an `adequate stop`. 
+    - These 4 routes travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). This reinforces that if you are taking a bus from a route within the Centre of the Metropolitan Area of the City you have more chances to board an `adequate vehicle` from an `adequate stop`. 
     
 ![](chart/BusComWCHAccessScatter.png)
 
 ### Presence of the Bus Accessibility Combination Events in the Routes
 - Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus, in more than 2/3 of the total routes the user has more than 50% of chances of boarding an `adequate vehicle` from an `adequate bus stop`.
 - The other events (`Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`) have a presence below 50% each in more than 80% of the routes.
-- More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadequate vehicle` is low, but the chance of boarding from a `inadequate stop` is even lower.
+- More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadequate vehicle` is low, but the chance of boarding from an `inadequate stop` is even lower.
 
 ![](chart/BusAccPres.png)
 
 ### Vehicle and Stops Accessibility by Routes
-- Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in wich route you are traveling. 
+- Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in which route you are traveling. 
 - On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). 
 
 ![](chart/VehStoAcc.png)
@@ -113,8 +113,8 @@ Based on the STM website, improving accessibility in the system is a priority an
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
 - The STM bus network has more than 60% of `Fully Accessibility` in all the Metropolitan Area.
 - The chance to take an `adequate vehicle` from an `adequate stop` is higher close to the Montréal Metropolitan Centre.
-- The chance of boarding from an `adecuate stop` is higher than taking an `adequate vehicle`.
-- The availability of `adequate vehicles` must increase to catch-up witht the `adequate stops`.
+- The chance of boarding from an `adequate stop` is higher than taking an `adequate vehicle`.
+- The availability of `adequate vehicles` must increase to catch-up with the `adequate stops`.
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equipped with elevators to facilitate secure access with a wheelchair.
 - Some Metro Stations have over half of their entrances accessible.
 
