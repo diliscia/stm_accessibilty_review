@@ -42,8 +42,8 @@
 - Based on the data it was proposed a Bus Accessibility Opportunity index:
 
     - When the stop is `boarding accessible` and the trip is `wheelchair accessible` the event is defined as `fully accessible`.
-    - When the stop is `boarding accessibile` but the trip is not `wheelchair accessible` the event is defined as `inadecuate vehicle`.
-    - When the stop is not `boarding accessibile` but the trip is `wheelchair accessible` the event is defined as `inadecuate stop`.
+    - When the stop is `boarding accessibile` but the trip is not `wheelchair accessible` the event is defined as `inadequate vehicle`.
+    - When the stop is not `boarding accessibile` but the trip is `wheelchair accessible` the event is defined as `inadequate stop`.
     - When the stop is not `boarding accessibile` and the trip is not `wheelchair accessible` the event is defined as `fully_innaccessible`.
     
 - The data shows that just 2.5% of all the events are Fully Inaccessible and 63.7% are Fully Accessible. 
@@ -62,14 +62,14 @@
         - 77-Station Lionel-Groulx / CUSM 
         - 193-Jarry
     - This routes are mostly located in the [Centre of the Metropolitan Area of the City](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
-    - Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus over 2/3 of all the routes the users have more than 50% of chances of boarding an `adecuate vehicle` form an `adecuate bus stop`.
-    - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadecuate vehicle` is low, but the chance of boarding from a `inadecuate stop` is even lower.  
+    - Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus over 2/3 of all the routes the users have more than 50% of chances of boarding an `adequate vehicle` form an `adequate bus stop`.
+    - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadequate vehicle` is low, but the chance of boarding from a `inadequate stop` is even lower.  
     - There are just 4 routes with more `Fully Inaccessibility` events superior to 50%, the rest of the routes have less than 35% `Fully Inaccessibility`events: 
         - 212-Sainte-Anne
         - 219 Chemin Sainte-Marie 
         - 220-Kieran 
         - 419-Express John Abbott
-    - This 4 routes travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). This reinforces that if you are taking a bus from a route within the Centre of the Metropolitan Area of the City you have more chances to board an `adecuate vehicle` from an `adecuate stop`. 
+    - This 4 routes travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). This reinforces that if you are taking a bus from a route within the Centre of the Metropolitan Area of the City you have more chances to board an `adequate vehicle` from an `adequate stop`. 
     
 ![](chart/BusComWCHAccessScatter.png)
 
@@ -88,8 +88,8 @@
 ---
 ## Conclusion
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
-- The STM bus network has more than 60% of accessibility in all the Metropolitan Area.
-- The chances to take an `adecuate vehicle` from an `adecuate stop` is higher in the routes Montréal Metropolitan Centre.  
+- The STM bus network has more than 60% of `Fully Accessibility` in all the Metropolitan Area.
+- The chances to take an `adequate vehicle` from an `adequate stop` is higher in the routes Montréal Metropolitan Centre.  
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equiped with elevators to facilitate the secure access with wheelchair.
 - Some Metro Stations are accessible in most of the half of the entrances.
 - Based on the STM website, improve accessibility in the system is a priority and the data could help to find the best and more impactfull oportunities for the affected users.
@@ -124,9 +124,9 @@
 ## Data Modeling and Analysis
 
 Five SQL queries were required to model and perfom the initial data exploration:
-- **bus_stop_wheelchair_boarding.sql**: to validate the total of bus stops adecuate for users on wheelchair.
-- **bus_trips_wheelchair_accessibility.sql**: to validate the total of bus trips adecuate for users on wheelchair.
-- **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adecuate access for users on wheelchair
+- **bus_stop_wheelchair_boarding.sql**: to validate the total of bus stops adequate for users on wheelchair.
+- **bus_trips_wheelchair_accessibility.sql**: to validate the total of bus trips adequate for users on wheelchair.
+- **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adequate access for users on wheelchair
 - **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total opportunities to effectively board an accessible vehicle from an boardable stop.
 - **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total opportunities of full access presented to the users for each offered bus route in the system.   
 
