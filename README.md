@@ -1,6 +1,6 @@
 <img src="https://github.com/diliscia/stm_accessibilty_review/blob/main/image/accessible-icon-dinamic.jpeg" width="80" height="80"> 
 
-# Montreal Public Transport Accessibility
+# Montréal Public Transport Accessibility
 
 ## Context
 
@@ -16,7 +16,7 @@
 - In the data is not available the actual number of STM bus units. However using the trips information it was possible to create a proxy value called `bus trips`.
 - Is not clear in the data how is computed the total of services offered.
 - *wheelchair_boarding* is related to the Bus Stop or Metro Station infrastructure, "wheelchair boardings are possible from the location".*
-- *wheelchair_accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."
+- *wheelchair_accessible* refers to the vehicle, "used on this particular trip can accommodate at least one rider in a wheelchair."*
 [STM data dictionary](https://developers.google.com/transit/gtfs/reference)
 ---
 
@@ -62,8 +62,7 @@
 
 ### Metro Stations Accessibility Based on Wheelchair Boarding
 
-- However, there is significantly room for improvement in the Metro Stations. 
-- Only 14 (20%) of the 68 Montréal Metro Stations have at least one entrance with Wheelchairs Boarding Accessibility. 
+- However, there is significantly room for improvement in the [Metro Stations](http://www.stm.info/en/info/networks/metro). Only 14 (20%) of the 68 Montréal Metro Stations have at least one entrance with Wheelchairs Boarding Accessibility.
 - In order to provide more details, it was proposed an Accessibility Index to compute the total of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
 
     - If more than the half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
@@ -76,8 +75,8 @@
 ---
 ## Conclusion
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
-- Despite the fact that the Metro Accessibility is not offered widely in the [system](http://www.stm.info/en/info/networks/metro), the biggest stations are properly equiped with elevators to facilitate the secure access with wheelchair.
-- Some Metro Stations are accessible in most of the half of the entries access.
+- Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equiped with elevators to facilitate the secure access with wheelchair.
+- Some Metro Stations are accessible in most of the half of the entrances.
 - Based on the STM website, improve accessibility in the system is a priority and the data could help to find the best and more impactfull oportunities for the affected users.
 
 
@@ -94,26 +93,26 @@
 
 # STM Accessibilty Review. Metodology notes
 
-## Data exploration and tools
-- For this analysis it was used public data was accesible on the [STM.com website](http://www.stm.info/en/about/developers). 
-- The data was downloaded on February 2021 and according to the `calendar` table contains data related to the trips from October 26th 2020 to March 21st, 2021 
+## Data Exploration and Tools
+- For this analysis it was used public data accesible on the [STM.com website](http://www.stm.info/en/about/developers). 
+- The data was downloaded on February 2021 and according to the `calendar` table it contains data related to the trips from October 26th 2020 to March 21st, 2021. 
 - The analysis was done using SQL.
 
 ## Data ask
-With the main purpose to use data analysis on public transit accessibility, the objetive is to provide more details about the real accesibility to the Bus and Metro in Montreal, using as proposed metrics: the access to Metro the stations and posibility to use the bus service offered by the STM.
+- With the main purpose to use data analysis on public transit accessibility, the objetive is to provide more details about the real accessibility to the Buses and Metro Stations in Montréal, using as proposed metrics: the access to the Metro Stations and posibility of use of the bus service offered by the STM.
 
-## Data Quality test
-- Some data was duplicated due to malformed names in the metro stations (accents, dash or numbers to idnetify the metro entrance). Some cleaning was perfomed to remove the duplications.
+## Data Quality Test
+- Some data was duplicated due to malformed names in the Metro Stations (accents, dash or numbers to identify the Metro entrances). Some cleaning was perfomed to remove the duplications.
 - The total of trips in the data were validated using the public information on the STM website.
-- The total of available Bus units os not available, however the total of trips is consistent with the public information on the STM website. 
+- The total of available Bus units is not available, however the total of trips (withing the calendar window) is consistent with the public information on the STM website. 
 
 ## Data Modeling and Analysis
 
-Four SQL queries were required to model and perfom the initial data exploration:
-- **bus_stop_wheelchair_boarding**: to validate the total of bus stops adecuate for users on wheelchair.
-- **bus_trips_wheelchair_accessibility**: to validate the total of bus trips adecuate for users on wheelchair.
-- **metro_stations_wheelchair_boarding_accessibility**: to validate the total of metro stations with adecuate access for users on wheelchair
-- **total_bus_accessibility_opportunities_stops_plus_units**: combining the bus stops data and the trips accesibility, to create an index based on the total ooporunities to effectively board a accessible vehicle from an accesible stop.
-- **total_bus_accessibility_opportunities_by_route.sql**:
+Five SQL queries were required to model and perfom the initial data exploration:
+- **bus_stop_wheelchair_boarding.sql**: to validate the total of bus stops adecuate for users on wheelchair.
+- **bus_trips_wheelchair_accessibility.sql**: to validate the total of bus trips adecuate for users on wheelchair.
+- **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adecuate access for users on wheelchair
+- **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total ooportunities to effectively board an accessible vehicle from an accessible stop.
+- **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total oportunities of full access presented to the users for each offered bus route in the system.   
 
 All queries are included in SQL files (sql_code folder).
