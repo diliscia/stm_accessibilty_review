@@ -98,7 +98,7 @@ Regarding the Metro stations:
 ### Metro Stations Accessibility Based on Wheelchair Boarding
 
 - However, there is significantly room for improvement in the [Metro Stations](http://www.stm.info/en/info/networks/metro). Only 14 (20%) of the 68 Montréal Metro Stations have at least one entrance with Wheelchairs Boarding Accessibility.
-- In order to provide more details, I created an Accessibility Index to compute thenumber of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
+- In order to provide more details, I created an Accessibility Index to compute the number of entrances with Wheelchair Boarding Accessibility based on the total number of entrances:
 
     - If more than half of the entrances to the station have Wheelchair Boarding Accessibility it is considered that is a `Very Accessible Station`. 
     - If less than half of the entrances have Wheelchair Boarding Accessibility it is considered a `Little Accessible Station`.
