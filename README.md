@@ -88,7 +88,7 @@ Regarding the Metro stations:
 ![](chart/BusAccPres.png)
 
 ### Vehicle and Stops Accessibility by Routes
-- Over 92% of the routes have a high percentage (75-100%) of `boardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in which route you are traveling. 
+- Over 92% of the routes have a high percentage (75-100%) of `aboardable stops`, that means that the chances to board from an `adequate stop` are really high doesn't matter in which route you are traveling. 
 - On the other hand, the vehicle availability (trips) is good, but not as good as the stops. 71% of the routes have more than 50% of `accessible vehicles`, but just 28% of the routes have a high percentage (75-100%). 
 
 ![](chart/VehStoAcc.png)
@@ -161,7 +161,7 @@ Five SQL queries were required to model and perfom the initial data exploration:
 - **metro_stations_wheelchair_boarding_accessibility.sql**: to validate the total of metro stations with adequate access for users on wheelchair
 - **total_bus_accessibility_opportunities_stops_plus_units.sql**: combining the bus stops and trips accessibility data, to create an index based on the total opportunities to effectively board an accessible vehicle from an boardable stop.
 - **total_bus_accessibility_opportunities_by_route.sql**: grouping the stops / trips events by routes, to validate the total opportunities of full access presented to the users for each offered bus route in the system.   
-- **total_bus_accessibility_average_per_route.sql**: compute the average of accesible stops and accesible vehicules per route.
+- **total_bus_accessibility_average_per_route.sql**: compute the average of accessible stops and accessible vehicles per route.
 
 
 All queries are included in SQL files (sql_code folder).
