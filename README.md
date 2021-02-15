@@ -57,19 +57,20 @@
 - It can be seen that the `Fully Accessibile` events are between 50% and 100% present in all the routes.
 - `Fully Inaccessible` events are located mostly below the 25% with a few isolated cases that are analized in the following: 
 
-     - Three routes have 100% Fully Accessibility, followed close by other routes with high Fully Accessibility events percentage:
-         -  13-Christophe-Colomb 
-         - 77-Station Lionel-Groulx / CUSM 
-         - 193-Jarry. 
-     - This routes are mostly located in the [Centre of the Metropolitan Area of the city](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
- - Over 67% of the routes have more than 50% of `Fully Accessibility` events.
- - More than 80% of the routes have less than 50% events with `Inadequate Vehicle`, `Fully Inaccessibility` and `Inadequate Stop`.
- - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes.
-     - The routes with more `Fully Inaccessibility` events superior to 50%, travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf): 
-         - 212-Sainte-Anne.
-         - 219 Chemin Sainte-Marie. 
-         - 220-Kieran and 419-Express John Abbott.
-
+    - Three routes have 100% Fully Accessibility, followed close by other routes with high Fully Accessibility events percentage:
+        - 13-Christophe-Colomb 
+        - 77-Station Lionel-Groulx / CUSM 
+        - 193-Jarry
+    - This routes are mostly located in the [Centre of the Metropolitan Area of the City](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). 
+    - Over 67% of the routes have more than 50% of `Fully Accessibility` events. This means that when taking a bus over 2/3 of all the routes the users have more than 50% of chances of boarding an `adecuate vehicle` form an `adecuate bus stop`.
+    - More than 95% of the `Fully Inaccessibility` and `Inadequate Stop` events are present in less than 20% of the routes. This means that no matter the route you are using the chance of taking an `inadecuate vehicle` is low, but the chance of boarding from a `inadecuate stop` is even lower.  
+    - There are just 4 routes with more `Fully Inaccessibility` events superior to 50%, the rest of the routes have less than 35% `Fully Inaccessibility`events: 
+        - 212-Sainte-Anne
+        - 219 Chemin Sainte-Marie 
+        - 220-Kieran 
+        - 419-Express John Abbott
+    - This 4 routes travel through the [Autoroute 40](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf) or operate in [West-Island](http://www.stm.info/sites/default/files/pdf/fr/plan_reseau.pdf). This reinforces that if you are taking a bus from a route within the Centre of the Metropolitan Area of the City you have more chances to board an `adecuate vehicle` from an `adecuate stop`. 
+    
 ![](chart/BusComWCHAccessScatter.png)
 
 ### Metro Stations Accessibility Based on Wheelchair Boarding
@@ -87,6 +88,8 @@
 ---
 ## Conclusion
 - The Montréal Bus offer seems pretty friendly for users with reduced mobility.
+- The STM bus network has more than 60% of accessibility in all the Metropolitan Area.
+- The chances to take an `adecuate vehicle` from an `adecuate stop` is higher in the routes Montréal Metropolitan Centre.  
 - Despite the fact that the Metro Accessibility is not offered widely in the system the biggest stations are properly equiped with elevators to facilitate the secure access with wheelchair.
 - Some Metro Stations are accessible in most of the half of the entrances.
 - Based on the STM website, improve accessibility in the system is a priority and the data could help to find the best and more impactfull oportunities for the affected users.
